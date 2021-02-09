@@ -6,9 +6,12 @@
     color:#313332
 } */
 
+
 @font-face {
-  font-family: Gauthier;
-  src: url(assets/fonts/gauthier.otf);
+  font-family: 'Gauthier';
+  font-style: normal;
+  font-weight: 300;
+  src: url(assets/fonts/gauthier.woff2) format('woff2');
 }
 
 .snipcart {
@@ -19,7 +22,7 @@
 }
 
 .snipcart__font--secondary, .snipcart__font--subtitle {
-    font-family:Gauthier;
+    font-family: Gauthier;
 }
 
 .snipcart-cart-button--highlight {
