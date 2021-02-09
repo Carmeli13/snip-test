@@ -46,3 +46,9 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
     background-color: #fafafa;
     color: #fff !important;
 }
+
+
+
+.snipcart-cart-button {
+    color: white;
+}
