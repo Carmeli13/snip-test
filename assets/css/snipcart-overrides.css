@@ -51,8 +51,8 @@
 }
 
 .snipcart__icon {
-    width: 30px;
-    height:30px
+    width: 20px;
+    height:20px
 }
 
 .snipcart-form-radio:checked + label:before {
