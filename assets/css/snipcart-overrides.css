@@ -35,8 +35,96 @@
   background-color: #404040;
 }
 
+/* Icon color and size */
+
 .snipcart__box--badge-highlight {
   background-image: none;
   background-color: black;
 }
 
+.snipcart__icon--blue-light path {
+    fill:#000000
+}
+
+.snipcart__icon--blue-dark path {
+    fill:#000000
+}
+
+.snipcart__icon {
+    width: 30px;
+    height:30px
+}
+
+.snipcart-form-radio:checked + label:before {
+    background: #11df27;
+    border:none
+}
+
+/* Input field border color - shipping method */
+
+.snipcart-shipping-rates-list-item:focus-within {
+    border:1px solid #000000
+}
+
+.snipcart-shipping-rates-list-item--highlight {
+    border:1px solid #000000}
+
+
+/* Input field border color - address */
+
+.snipcart-input:focus-within {
+    outline: none;
+    border: 1px solid #000000;
+    box-shadow:0 12px 24px 0 #f0f0f0
+}
+
+/* Input field border color - country */
+
+.snipcart-form__select:focus {
+    outline: none;
+    border:1px solid #000000
+}
+
+
+/* checkbox color - address */
+
+.snipcart-checkbox:focus + label:before, .snipcart-checkbox:hover + label:before {
+    border:1px solid #000000
+}
+
+.snipcart-checkbox:checked + label:before {
+    border: 1px solid #000000;
+    background-color: #000000;
+    box-shadow:0 2px 3px #f0f0f0
+}
+
+
+
+.snipcart-cart-header {
+    background-color: #fafafa;
+    }
+
+.snipcart-modal {
+    background-color:#fafafa
+}
+
+.snipcart-cart__content {
+    background-color:#fafafa
+}
+
+.snipcart-featured-payment-methods__title {
+    background-color: #fafafa;
+}
+
+.snipcart-layout__footer {
+    background-color:#fafafa
+}
+
+.snipcart-modal__container {
+    background-color:#fafafa
+}
+
+/* Color of cards in the checkout form */
+
+.snipcart__box--gray {
+    background-color:#ffffff}
