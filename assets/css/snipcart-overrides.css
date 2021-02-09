@@ -1,0 +1,14 @@
+.snipcart-cart-button--highlight {
+  background-color: black;
+  box-shadow: none;
+  background-image: none;
+}
+
+.snipcart-cart-button--highlight:hover {
+  background-color: #404040;
+}
+
+.snipcart__box--badge-highlight {
+  background-image: none;
+  background-color: black;
+}
