@@ -18,6 +18,10 @@
     color:#313332
 }
 
+.snipcart__font--secondary, .snipcart__font--subtitle {
+    /* font-family:Gauthier */
+}
+
 .snipcart-cart-button--highlight {
   background-color: black;
   box-shadow: none;
