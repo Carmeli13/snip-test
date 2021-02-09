@@ -64,11 +64,12 @@
         </div>
           
             <div class="snipcart-form__field">
-          <snipcart-label for="phone">
-                Phone number
-            </snipcart-label>
-            <snipcart-input name="phone">
-            </snipcart-input>
+          <snipcart-label
+            class="snipcart__font--tiny"
+            for="phone"
+          >{{ $localize('address_form.phone') }}</snipcart-label>
+          <snipcart-input name="phone"></snipcart-input>
+          <snipcart-error-message name="phone"></snipcart-error-message>
         </div>
 
         <div class="snipcart-form__field">
@@ -102,15 +103,7 @@
   </address-fields>
     
     
-    <address-fields section="top">
-        <div>
-            <snipcart-label for="phone">
-                Phone number
-            </snipcart-label>
-            <snipcart-input name="phone">
-            </snipcart-input>
-        </div>
-    </address-fields>
+   
     
 
     
