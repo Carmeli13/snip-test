@@ -1,3 +1,23 @@
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat:300,500|Open+Sans:300,600);
+.snipcart {
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color:#313332
+} */
+
+@font-face {
+  font-family: Gauthier;
+  src: url(assets/fonts/gauthier.otf);
+}
+
+.snipcart {
+    font-family: Gauthier, serif;
+    font-size: 14px;
+    font-weight: 300;
+    color:#313332
+}
+
 .snipcart-cart-button--highlight {
   background-color: black;
   box-shadow: none;
