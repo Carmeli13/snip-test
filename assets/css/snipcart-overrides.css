@@ -133,3 +133,18 @@
 .snipcart-cart-summary-expanded-item {
 font-family: 'Gauthier';
 }
+
+.snipcart-typeahead__suggestions {
+ border: 1px solid #000000;   
+}
+
+.snipcart-textbox--focus {
+    outline: none;
+    border: 1px solid #000000;
+    box-shadow:0 12px 24px 0 #eef6f9
+}
+
+.snipcart-cart-summary-fees__notice {
+    margin-top:24px;
+    margin-bottom: 24px;
+}
