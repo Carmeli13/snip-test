@@ -60,6 +60,15 @@
             <snipcart-input name="address2"></snipcart-input>
             <snipcart-error-message name="address2"></snipcart-error-message>
           </div>
+            <div class="snipcart-form__field snipcart-form__cell--tidy">
+            <snipcart-label
+              class="snipcart__font--tiny"
+              for="postalCode"
+            >{{ $localize('address_form.postalCode') }}</snipcart-label>
+            <snipcart-input name="postalCode"></snipcart-input>
+            <snipcart-error-message name="postalCode"></snipcart-error-message>
+          </div>
+            
         </div>
 
         <div class="snipcart-form__field">
@@ -88,14 +97,7 @@
             <snipcart-typeahead type="dropdown" name="province" autocomplete="province state"></snipcart-typeahead>
           </div>
 
-          <div class="snipcart-form__field snipcart-form__cell--tidy">
-            <snipcart-label
-              class="snipcart__font--tiny"
-              for="postalCode"
-            >{{ $localize('address_form.postalCode') }}</snipcart-label>
-            <snipcart-input name="postalCode"></snipcart-input>
-            <snipcart-error-message name="postalCode"></snipcart-error-message>
-          </div>
+          
         </div>
       </fieldset>
     </div>
