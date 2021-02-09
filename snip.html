@@ -84,7 +84,24 @@
           <snipcart-typeahead type="dropdown" name="country" autocomplete="country"></snipcart-typeahead>
         </div>
 
-        
+        <div class="snipcart-form__row">
+          <div class="snipcart-form__field snipcart-form__cell--large">
+            <snipcart-label
+              class="snipcart__font--tiny"
+              for="province"
+            >{{ $localize('address_form.province') }}</snipcart-label>
+            <snipcart-typeahead type="dropdown" name="province" autocomplete="province state"></snipcart-typeahead>
+          </div>
+
+          <div class="snipcart-form__field snipcart-form__cell--tidy">
+            <snipcart-label
+              class="snipcart__font--tiny"
+              for="postalCode"
+            >{{ $localize('address_form.postalCode') }}</snipcart-label>
+            <snipcart-input name="postalCode"></snipcart-input>
+            <snipcart-error-message name="postalCode"></snipcart-error-message>
+          </div>
+        </div>
       </fieldset>
     </div>
   </address-fields>
