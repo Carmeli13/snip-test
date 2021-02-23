@@ -41,7 +41,7 @@
             class="snipcart__font--tiny"
             for="phone"
           >Telefónne číslo</snipcart-label>
-          <snipcart-input name="phone" placeholder="0948 123 456"></snipcart-input>
+          <snipcart-input name="phone" required placeholder="0948 123 457"></snipcart-input>
           <snipcart-error-message name="phone"></snipcart-error-message>
         </div>
           
@@ -96,6 +96,18 @@
           >{{ $localize('address_form.country') }}</snipcart-label>
           <snipcart-typeahead type="dropdown" name="country" autocomplete="country"></snipcart-typeahead>
         </div>
+
+        
+          <div class="snipcart-form__field snipcart-form__cell--large">
+            <snipcart-label
+              class="snipcart__font--tiny"
+              for="province"
+            >{{ $localize('address_form.province') }}</snipcart-label>
+            <snipcart-typeahead type="dropdown" name="province" autocomplete="province state"></snipcart-typeahead>
+          </div>
+
+
+        
 
       </fieldset>
     </div>
