@@ -148,3 +148,18 @@ font-family: 'Gauthier';
     border: 1px solid #000000;
     box-shadow:0 12px 24px 0 #eef6f9
 }
+
+/* Discound Box */
+
+.snipcart-discount-box__form {
+    border: 1px solid #52bcf8;
+}
+
+.snipcart-input--no-style:focus-within {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.snipcart-discount-box {
+    display:none
+}
