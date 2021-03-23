@@ -11,7 +11,7 @@
   font-family: 'Gauthier';
   font-style: normal;
   font-weight: 300;
-  src: url(assets/fonts/gauthier.woff2) format('woff2');
+  src: url(./assets/fonts/gauthier.woff2) format('woff2');
 }
 
 .snipcart {
@@ -135,7 +135,7 @@ font-family: 'Gauthier';
 }
 
 .snipcart-typeahead__suggestions {
- border: 1px solid #000000;   
+ border: 1px solid #000000;
 }
 
 .snipcart-cart-summary-fees__notice {
@@ -160,6 +160,6 @@ font-family: 'Gauthier';
     box-shadow: none !important;
 }
 
-.snipcart-discount-box {
+/* .snipcart-discount-box {
     display:none
-}
+} */
