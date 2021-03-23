@@ -27,15 +27,15 @@
       </div>
     </fieldset>
   </payment>
-
-
-
-
+    
+    
+    
+   
     <address-fields>
     <div>
       <fieldset class="snipcart-form__set">
-
-
+          
+          
         <div class="snipcart-form__field">
           <snipcart-label
             class="snipcart__font--tiny"
@@ -44,7 +44,7 @@
           <snipcart-input name="phone" required placeholder="0948 123 456"></snipcart-input>
           <snipcart-error-message name="phone"></snipcart-error-message>
         </div>
-
+          
         <div class="snipcart-form__row">
           <div class="snipcart-form__field snipcart-form__cell--large">
             <snipcart-label
@@ -84,9 +84,15 @@
             <snipcart-error-message name="postalCode"></snipcart-error-message>
           </div>
         </div>
+          
 
-
-
+          <div class="snipcart-form__field snipcart-form__cell--large">
+            <snipcart-input
+              style="display: none;"
+              name="province"
+              value="blank"
+            ></snipcart-input>
+          </div>
 
 
         <div class="snipcart-form__field">
@@ -96,7 +102,14 @@
           >{{ $localize('address_form.country') }}</snipcart-label>
           <snipcart-typeahead type="dropdown" name="country" autocomplete="country"></snipcart-typeahead>
         </div>
+
       </fieldset>
     </div>
   </address-fields>
+    
+    
+   
+    
+
+    
 </div>
