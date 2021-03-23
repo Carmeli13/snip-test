@@ -93,6 +93,19 @@
           >{{ $localize('address_form.country') }}</snipcart-label>
           <snipcart-typeahead type="dropdown" name="country" autocomplete="country"></snipcart-typeahead>
         </div>
+
+
+        <div class="snipcart-form__row">
+          <div class="snipcart-form__field snipcart-form__cell--large">
+            <snipcart-input
+              style="display: none;"
+              name="province"
+              value="blank"
+            ></snipcart-input>
+          </div>
+        </div>
+
+
       </fieldset>
     </div>
   </address-fields>
