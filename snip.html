@@ -1,5 +1,4 @@
 <div id="snipcart-templates">
-
   <billing section="bottom">
     <div>
       <discount-box></discount-box>
@@ -14,7 +13,7 @@
             for="acceptGdpr"
             class="snipcart__font--tiny snipcart-form__label--checkbox"
           >
-            I accept GDPR.
+            Akceptujem podmienky GDPR.
           </snipcart-label>
         </div>
       </div>
@@ -25,8 +24,8 @@
             for="acceptTerms"
             class="snipcart__font--tiny snipcart-form__label--checkbox"
           >
-            I accept&nbsp;<a href="/terms.html" target="_blank"
-              >the terms of use</a
+            Akceptujem&nbsp;<a href="/terms.html" target="_blank"
+              >obchodné podmienky</a
             >.
           </snipcart-label>
         </div>
@@ -34,38 +33,34 @@
     </fieldset>
   </payment>
 
-
-
-
-    <address-fields>
+  <address-fields>
     <div>
       <fieldset class="snipcart-form__set">
-
-
         <div class="snipcart-form__field">
-          <snipcart-label
-            class="snipcart__font--tiny"
-            for="phone"
-          >Telefónne číslo</snipcart-label>
-          <snipcart-input name="phone" required placeholder="0948 123 456"></snipcart-input>
+          <snipcart-label class="snipcart__font--tiny" for="phone"
+            >Telefónne číslo</snipcart-label
+          >
+          <snipcart-input
+            name="phone"
+            required
+            placeholder="0948 123 456"
+          ></snipcart-input>
           <snipcart-error-message name="phone"></snipcart-error-message>
         </div>
 
         <div class="snipcart-form__row">
           <div class="snipcart-form__field snipcart-form__cell--large">
-            <snipcart-label
-              class="snipcart__font--tiny"
-              for="address1"
-            >{{ $localize('address_form.address1') }}</snipcart-label>
+            <snipcart-label class="snipcart__font--tiny" for="address1"
+              >{{ $localize('address_form.address1') }}</snipcart-label
+            >
             <snipcart-input name="address1"></snipcart-input>
             <snipcart-error-message name="address1"></snipcart-error-message>
           </div>
 
           <div class="snipcart-form__field snipcart-form__cell--tidy">
-            <snipcart-label
-              class="snipcart__font--tiny"
-              for="address2"
-            >{{ $localize('address_form.address2') }}</snipcart-label>
+            <snipcart-label class="snipcart__font--tiny" for="address2"
+              >{{ $localize('address_form.address2') }}</snipcart-label
+            >
             <snipcart-input name="address2"></snipcart-input>
             <snipcart-error-message name="address2"></snipcart-error-message>
           </div>
@@ -73,43 +68,44 @@
 
         <div class="snipcart-form__row">
           <div class="snipcart-form__field snipcart-form__cell--large">
-            <snipcart-label
-              class="snipcart__font--tiny"
-              for="city"
-            >{{ $localize('address_form.city') }}</snipcart-label>
+            <snipcart-label class="snipcart__font--tiny" for="city"
+              >{{ $localize('address_form.city') }}</snipcart-label
+            >
             <snipcart-input name="city"></snipcart-input>
             <snipcart-error-message name="city"></snipcart-error-message>
           </div>
 
           <div class="snipcart-form__field snipcart-form__cell--tidy">
-            <snipcart-label
-              class="snipcart__font--tiny"
-              for="postalCode"
-            >{{ $localize('address_form.postalCode') }}</snipcart-label>
+            <snipcart-label class="snipcart__font--tiny" for="postalCode"
+              >{{ $localize('address_form.postalCode') }}</snipcart-label
+            >
             <snipcart-input name="postalCode"></snipcart-input>
             <snipcart-error-message name="postalCode"></snipcart-error-message>
           </div>
         </div>
 
-
         <div class="snipcart-form__field snipcart-form__cell--large">
-          <snipcart-label
-            class="snipcart__font--tiny"
-            for="province"
-          >{{ $localize('address_form.province') }}</snipcart-label>
-          <snipcart-typeahead type="dropdown" name="province" autocomplete="province state"></snipcart-typeahead>
+          <snipcart-label class="snipcart__font--tiny" for="province"
+            >{{ $localize('address_form.province') }}</snipcart-label
+          >
+          <snipcart-typeahead
+            type="dropdown"
+            name="province"
+            autocomplete="province state"
+          ></snipcart-typeahead>
         </div>
-
 
         <div class="snipcart-form__field">
-          <snipcart-label
-            class="snipcart__font--tiny"
-            for="country"
-          >{{ $localize('address_form.country') }}</snipcart-label>
-          <snipcart-typeahead type="dropdown" name="country" autocomplete="country"></snipcart-typeahead>
+          <snipcart-label class="snipcart__font--tiny" for="country"
+            >{{ $localize('address_form.country') }}</snipcart-label
+          >
+          <snipcart-typeahead
+            type="dropdown"
+            name="country"
+            autocomplete="country"
+          ></snipcart-typeahead>
         </div>
-
       </fieldset>
     </div>
   </address-fields>
-  </div>
+</div>

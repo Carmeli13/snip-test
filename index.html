@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="main.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css"
+      href="https://cdn.snipcart.com/themes/v3.1.0/default/snipcart.css"
     />
-    <link rel="stylesheet" href="assets/css/snipcart-overrides.css" />
+    <link rel="stylesheet" href="snipcart-overrides.css" />
   </head>
   <body>
     <h1>
@@ -23,15 +23,161 @@
       data-item-price="19"
       data-item-name="Fabulous Smoothie"
       data-item-url="https://carmeli13.github.io/snip-test/"
-            data-item-image="images/smoothie.png"
+      data-item-image="smoothie.jpg"
     >
       Add to cart
+      <span
+        style="
+          position: static;
+          top: 50%;
+          margin-top: -1.5em;
+          margin-right: 3em;
+          right: -1em;
+          display: block;
+          width: 1.75em;
+          height: 1.75em;
+          color: #fff;
+          font-size: 0.6667rem;
+          line-height: 1;
+          padding: 0.4em;
+          text-align: center;
+          background-color: #d18e50;
+          border-radius: 100%;
+        "
+      >
+        <span class="snipcart-items-count"></span>
+      </span>
     </button>
 
+    <script
+      async
+      src="https://cdn.snipcart.com/themes/v3.1.0/default/snipcart.js"
+    ></script>
+    <div
+      id="snipcart"
+      data-config-modal-style="side"
+      data-templates-url="./snip.html"
+      data-api-key="NzFjODhjZGYtZjJmZC00MjVlLWJlZDgtMmFjNzQzNzk5NTUyNjM3NDg0MTM4NDg3MTQ4Mzcz"
+      hidden
+    ></div>
 
-    <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
-        <div id="snipcart" data-config-modal-style="side" data-templates-url="./snip.html" data-api-key="NzFjODhjZGYtZjJmZC00MjVlLWJlZDgtMmFjNzQzNzk5NTUyNjM3NDg0MTM4NDg3MTQ4Mzcz" hidden></div>
-
-    <script></script>
+    <script>
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          actions: {
+            checkout: "Do pokladne"
+          }
+        });
+      });
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          discount_box: {
+            promo_code: "Máte kupón?"
+          }
+        });
+      });
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          discount_box: {
+            promo_code_placeholder: "Kód kupónu"
+          }
+        });
+      });
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          discount_box: {
+            promocode_applied: "Kupón bol úspešne uplatnený"
+          }
+        });
+      });
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          billing: {
+            continue_to_shipping: "Pokračovať na spôsob dopravy"
+          }
+        });
+      });
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          cart: {
+            empty: "Váš košík je zatiaľ prázdny😳"
+          }
+        });
+      });
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          cart: {
+            secured_by:
+              "O absolútnu bezpečnosť Vašich platieb sa stará Snipcart"
+          }
+        });
+      });
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          cart: {
+            view_detailed_cart: "Ísť na detailný prehľad košíka"
+          }
+        });
+      });
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          errors: {
+            promo_code_is_invalid: "Tento kupón nie je platný"
+          }
+        });
+      });
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          errors: {
+            promocode_isnt_applicable: "Tento kupón nie je platný"
+          }
+        });
+      });
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          shipping: {
+            title: "Doprava"
+          }
+        });
+      });
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          confirmation: {
+            thank_you_for_your_order: "Ďakujeme za Vašu objednávku😍"
+          }
+        });
+      });
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          payment: {
+            place_order: "Dokončiť objednávku"
+          }
+        });
+      });
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          payment: {
+            form: {
+              deferred_payment_instructions:
+                "Zadaním tejto objednávky súhlasíte s platbou na dobierku."
+            }
+          }
+        });
+      });
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          discounts: {
+            title: "Kupón"
+          }
+        });
+      });
+      document.addEventListener("snipcart.ready", function () {
+        Snipcart.api.session.setLanguage("sk", {
+          cart_summary: {
+            discount: "Kupón"
+          }
+        });
+      });
+    </script>
   </body>
 </html>
